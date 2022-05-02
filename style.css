@@ -1,0 +1,383 @@
+@import url('https://fonts.googleapis.com/css2?family=Square+Peg&display=swap');
+
+body {
+    font-family: 'Square Peg', cursive;
+}
+
+.welcome_sign {
+    position: absolute;
+    background-image: linear-gradient(to bottom right, #200c06, #ffffff37);
+    width: 60px;
+    height: 30px;
+    border: 1px solid black;
+    border-radius: 50%;
+    top: 570px;
+    left: 858px;
+    z-index: 20;
+}
+
+.sign_home,
+.sign_sweet {
+    position: absolute;
+    font-size: 1.7em;
+    top: px;
+    left: px;
+    transform: rotate(-25deg);
+    z-index: 20;
+}
+
+.sign_home {
+    top: -13px;
+    left: 14px;
+}
+
+.sign_sweet {
+    transform: rotate(-20deg);
+    top: 2px;
+    left: 7px;
+}
+
+.text {
+    animation: glow 1s ease-in-out infinite alternate;
+}
+
+@keyframes glow {
+    from {
+        text-shadow: 0 0 3px #fff, 0 0 5px #fff, 0 0 7px #e60073, 0 0 9px #e60073, 0 0 11px #e60073, 0 0 13px #e60073, 0 0 15px #e60073;
+    }
+
+    to {
+        text-shadow: 0 0 4px #fff, 0 0 6px #ff4da6, 0 0 8px #ff4da6, 0 0 10px #ff4da6, 0 0 12px #ff4da6, 0 0 14px #ff4da6, 0 0 16px #ff4da6;
+    }
+}
+
+/* // Welcome Sign */
+
+.entrance {
+    position: absolute;
+    top: -200px;
+    left: 500px;
+}
+
+.roof {
+    position: relative;
+    width: 0;
+    height: 0;
+    border-left: 110px solid transparent;
+    border-right: 110px solid transparent;
+    border-bottom: 75px solid rgb(100, 100, 100);
+    left: 283px;
+    top: 520px;
+    z-index: 4;
+}
+
+.roof_2,
+.roof_3 {
+    position: absolute;
+    width: 245px;
+    height: 55px;
+    background-color: black;
+    left: 185px;
+    top: 520px;
+    transform: rotate(-35deg);
+    z-index: 5;
+}
+
+.roof_3 {
+    left: 355px;
+    top: 520px;
+    transform: rotate(35deg);
+}
+
+.roof_4,
+.roof_5 {
+    position: absolute;
+    width: 233px;
+    height: 40px;
+    background-color: #335749;
+    left: 192px;
+    top: 527px;
+    transform: rotate(-35deg);
+    z-index: 6;
+}
+
+.roof_5 {
+    left: 360px;
+    top: 527px;
+    transform: rotate(35deg);
+}
+
+/* // Entrance Roof */
+
+/* Front of House */
+
+.front {
+    position: absolute;
+    width: 330px;
+    height: 320px;
+    background-color: rgb(226, 226, 226);
+    border-top: 5px solid black;
+    border-left: 7px solid black;
+    border-right: 7px solid black;
+    border-bottom: 7px solid black;
+    left: 220px;
+    top: 595px;
+    z-index: 2;
+}
+
+.entrance_door {
+    position: absolute;
+    background-color: #200c06;
+    top: 740px;
+    left: 337px;
+    width: 100px;
+    height: 170px;
+    border: 3px solid black;
+    z-index: 10;
+}
+
+.door_frame {
+    position: absolute;
+    background-color: #200c06;
+    top: 720px;
+    left: 316px;
+    width: 106px;
+    height: 170px;
+    border-left: 20px solid grey;
+    border-right: 20px solid grey;
+    border-top: 20px solid rgb(100, 100, 100);
+    z-index: 9;
+}
+
+.door_handle {
+    position: absolute;
+    background-color: grey;
+    width: 14px;
+    height: 14px;
+    border-radius: 50%;
+    border: 1px solid black;
+    top: 825px;
+    left: 345px;
+    z-index: 11;
+}
+
+.door_step {
+    position: absolute;
+    background-color: rgb(107, 107, 107);
+    top: 899px;
+    left: 316px;
+    width: 140px;
+    height: 18px;
+    z-index: 11;
+    border-top: 3px solid black;
+    border-left: 3px solid black;
+    border-right: 3px solid black;
+}
+
+.entrance_window_L,
+.entrance_window_R {
+    position: absolute;
+    background-color: rgb(159, 255, 255);
+    height: 170px;
+    width: 35px;
+    top: 700px;
+    left: 263px;
+    border: 3px solid black;
+    z-index: 15;
+}
+
+.entrance_window_R {
+    left: 477px;
+}
+
+/* // Front of House */
+
+/* Experiment
+    .main_roof {
+    position: absolute;
+    background-color: #335749;
+    width: 1255px;
+    height: 80px;
+    clip-path: polygon(5% 0, 95% 0, 100% 100%, 0 100%);
+    top: 375px;
+    left: 265px;
+    border: 5px solid black;
+    border-end-end-radius: 30px;
+    border-bottom-left-radius: 30px;
+    z-index: 1;
+} */
+
+/* Rest of House */
+
+.wall_1,
+.wall_2 {
+    position: absolute;
+    background-color: rgb(158, 158, 158);
+    width: 400px;
+    height: 265px;
+    top: 445px;
+    left: 320px;
+    border: 7px solid black;
+}
+
+.wall_2 {
+    top: 445px;
+    left: 1050px;
+}
+
+.window_1,
+.window_2 {
+    position: absolute;
+    background-color: rgb(159, 255, 255);
+    height: 100px;
+    width: 150px;
+    top: 555px;
+    left: 350px;
+    border: 5px solid black;
+    border-bottom-width: 10px;
+}
+
+.window_2 {
+    left: 535px;
+}
+
+.window_deco_1,
+.window_deco_2 {
+    position: absolute;
+    background-color: rgb(36, 36, 36);
+    height: 100px;
+    width: 1px;
+    top: 560px;
+    left: 390px;
+    border-left: 3px solid black;
+    border-right: 5px solid black;
+}
+
+.window_deco_2 {
+    left: 575px;
+}
+
+/*Garage Stuff starts here */
+
+.garage_door {
+    position: absolute;
+    background-color: rgb(100, 100, 100);
+    width: 300px;
+    height: 200px;
+    top: 510px;
+    left: 1105px;
+    border: 7px solid black;
+}
+
+.garage_door_deco_1,
+.garage_door_deco_2,
+.garage_door_deco_3,
+.garage_door_deco_4,
+.garage_door_deco_5,
+.garage_door_deco_6 {
+    position: absolute;
+    background-color: rgb(100, 100, 100);
+    width: 100px;
+    height: 20px;
+    top: 527px;
+    left: 1125px;
+    border-top: 15px solid rgb(107, 107, 107);
+    border-left: 15px solid rgb(103, 103, 103);
+    border-right: 15px solid rgb(102, 102, 102);
+    border-bottom: 15px solid rgb(98, 98, 98);
+}
+
+.garage_door_deco_2,
+.garage_door_deco_4,
+.garage_door_deco_6 {
+    left: 1270px;
+}
+
+.garage_door_deco_3,
+.garage_door_deco_4 {
+    top: 592px;
+}
+
+.garage_door_deco_5,
+.garage_door_deco_6 {
+    top: 655px;
+}
+
+/* // Garage Stuff
+Start of main Roof */
+
+.left_roof,
+.right_roof {
+    position: absolute;
+    background-color: #335749;
+    width: 450px;
+    height: 80px;
+    transform: skew(-25deg);
+    border: 5px solid black;
+    border-bottom-left-radius: 20px;
+    left: 299px;
+    top: 375px;
+    z-index: 1;
+}
+
+.right_roof {
+    left: 1024px;
+    transform: skew(25deg);
+    border-bottom-right-radius: 20px;
+}
+
+.roof_deco {
+    position: absolute;
+    background-color: black;
+    width: 1205px;
+    height: 3px;
+    top: 447px;
+    left: 290px;
+    z-index: 1;
+}
+
+/*
+.brick_1,
+.brick_2,
+.brick_3,
+.brick_4,
+.brick_5,
+.brick_6 {
+    position: absolute;
+    background-color: rgba(159, 255, 255, 0);
+    height: 12px;
+    width: 34px;
+    top: 510px;
+    left: 325px;
+    border: 2px solid black;
+    z-index: 15;
+}
+
+.brick_2 {
+    background-color: rgb(104, 104, 104);
+    top: 492px;
+    left: 363px;
+}
+
+.brick_3 {
+    background-color: rgb(104, 104, 104);
+    top: 685px;
+}
+
+.brick_4 {
+    top: 475px;
+    left: 550px;
+}
+
+.brick_5 {
+    background-color: rgb(104, 104, 104);
+    top: 492px;
+    left: 588px;
+}
+
+.brick_6 {
+    background-color: rgb(104, 104, 104);
+    top: 528px;
+    left: 670px;
+}
+*/
